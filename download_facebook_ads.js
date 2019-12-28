@@ -42,11 +42,9 @@ function isReqData(req, query) {
 		query = 'e',
 		//num = '1500',
 		num = '' + randomInt(800, 1200),
-
 		gotoUrl = 'https://www.facebook.com/ads/library/' +
 			'?active_status=' + activeStatusRequest + '&ad_type=political_and_issue_ads&country=IT' + 
-			'&impression_search_field=has_impressions_lifetime&q=' + query
-
+			'&impression_search_field=has_impressions_lifetime&q=' + query,
 		fbAdsReqUrlOld = '';
 
 	const browser = await puppeteer.launch();
