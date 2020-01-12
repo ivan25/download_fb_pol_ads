@@ -39,8 +39,7 @@ function isReqData(req, query) {
 			'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.39 Safari/537.36';
 
 	let activeStatusRequest = 'all',
-		query = 'e',
-		//num = '1500',
+		query = process.argv[2],
 		num = '' + randomInt(800, 1200),
 		gotoUrl = 'https://www.facebook.com/ads/library/' +
 			'?active_status=' + activeStatusRequest + '&ad_type=political_and_issue_ads&country=IT' + 
